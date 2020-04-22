@@ -1,11 +1,11 @@
 <scroll-view scroll-y class="scrollPage">
   <view class="UCenter-bg">
-    <image src="https://wxdc.bsrse.com/media/image/logo_gz.jpg" class="png" mode="widthFix"></image>
+    <image src="https://xxx.xxx.com/media/image/logo_gz.jpg" class="png" mode="widthFix"></image>
     <view class="text-xl">公主连结百科
       <text class="text-df">v1.0.11</text>
     </view>
     
-    <image class="gif-wave" mode="scaleToFill" src="https://wxdc.bsrse.com/media/image/wave.gif"></image>
+    <image class="gif-wave" mode="scaleToFill" src="https://xxx.xxx.com/media/image/wave.gif"></image>
   </view>
   <view class="cu-list menu card-menu margin-top-xl margin-bottom-xl shadow-lg radius">
     <view class="cu-item arrow">

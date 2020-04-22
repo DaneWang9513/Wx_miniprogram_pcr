@@ -70,8 +70,8 @@ Component({
     },
     showQrcode() {
       wx.previewImage({
-        urls: ['https://wxdc.bsrse.com/media/image/zanshama.jpg'],
-        current: 'https://wxdc.bsrse.com/media/image/zanshama.jpg' // 当前显示图片的http链接      
+        urls: ['https://xxx.xxx.com/media/image/zanshama.jpg'],
+        current: 'https://xxx.xxx.com/media/image/zanshama.jpg' // 当前显示图片的http链接      
       })
     },
     feedback: function() {
