@@ -1,0 +1,4 @@
+/* miniprogram/pages/plugin/gacha/gacha.wxss */
+.adContainer {
+  width: 100%;
+}

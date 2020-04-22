@@ -1,0 +1,35 @@
+<!--miniprogram/pages/plugin/push/push.wxml-->
+
+<cu-custom bgColor="bg-gradual-red" isBack="{{true}}"><view slot="backText">返回</view><view slot="content">推图</view></cu-custom>
+<view class="cu-card dynamic {{isCard?'no-card':''}}">
+  <view class="cu-item shadow">
+    <view class="cu-list menu-avatar">
+      <view class="cu-item">
+        <view class="cu-avatar round lg" style="background-image:url('https://wxdc.bsrse.com/media/image/logo_gz.jpg');"></view>
+        <view class="content flex-sub">
+          <view>公主连结百科</view>
+          <view class="text-gray text-sm flex justify-between">
+            2020年04月18日
+          </view>
+        </view>
+      </view>
+    </view>
+    <view class="text-content">
+      为大家带来了<text style="font-weight:bolder">up主丸子</text>的推图建议，感兴趣的玩家快来了解一下吧！
+    </view>
+    <view class="text-content">
+      <text style="font-weight:bolder">欢迎大家到b站直接关注up主丸子进行观看</text>
+    </view>
+    <view class="grid flex-sub padding-lr {{isCard?'col-3 grid-square':'col-1'}}">
+      <import src="../../../wxParse/wxParse.wxml"/>
+      <template is="wxParse" data="{{wxParseData:article.nodes}}"/>
+     <button class="cu-btn bg-green margin-tb-sm lg" bindlongpress ='copy' data-copy='{{src}}' style="width: 600rpx;">长按复制链接，粘贴至浏览器打开</button>
+    </view>
+    <view class="text-gray text-sm text-right padding">
+      <text class="cuIcon-attentionfill margin-lr-xs"></text> 
+      <text class="cuIcon-appreciatefill margin-lr-xs"></text> 
+      <text class="cuIcon-messagefill margin-lr-xs"></text> 
+    </view>
+  </view>
+</view>
+

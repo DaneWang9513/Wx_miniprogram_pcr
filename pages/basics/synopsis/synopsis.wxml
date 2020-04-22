@@ -1,0 +1,11 @@
+<cu-custom bgColor="bg-gradual-blue" isBack="{{true}}"><view slot="backText">返回</view><view slot="content">剧情简介</view></cu-custom>
+<view class='margin-xl bg-white padding-xl radius shadow-lg'>
+  <view class='text-center margin-bottom text-lg  text-grey'>关于公主连结</view>
+  <view class='text-content'>
+    <import src="../../../wxParse/wxParse.wxml"/>
+    <template is="wxParse" data="{{wxParseData:article.nodes}}"/>
+  </view>
+</view>
+<view class="adContainer">
+  <ad unit-id="adunit-df0597dadf2f0d68"></ad>
+</view>

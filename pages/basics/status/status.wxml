@@ -1,0 +1,14 @@
+<!--miniprogram/pages/basics/status/status.wxml-->
+<cu-custom bgColor="bg-gradual-green" isBack="{{true}}"><view slot="backText">返回</view><view slot="content">状态图示</view></cu-custom>
+<view class="cu-bar bg-white margin-top solid-bottom">
+  <view class="action">
+    <text class="cuIcon-title text-orange"></text> 状态图示
+  </view>
+</view>
+<view style="background-color:white;">
+<import src="../../../wxParse/wxParse.wxml"/>
+<template is="wxParse" data="{{wxParseData:article.nodes}}"/>
+</view>
+<view class="adContainer">
+  <ad unit-id="adunit-70f95f99d11fcc38"></ad>
+</view>

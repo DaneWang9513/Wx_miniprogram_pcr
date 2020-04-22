@@ -1,0 +1,66 @@
+.search-delete {
+    width: 1.4em;
+    height: 1.4em;
+    margin-right: 24rpx;
+}
+
+.header {
+    position: fixed;
+    width: 100%;
+    z-index: 9999;
+}
+
+.list {
+    margin-top: 190rpx;
+    padding-bottom: 100rpx;
+}
+
+.resident-img {
+    height: 74rpx;
+    font-size: 2em;
+}
+
+.img-wrapper {
+    position: absolute;
+    left: 30rpx;
+    width: 108rpx;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: -1rpx;
+}
+
+.filter-tab {
+    margin: 0!important;
+    padding: 0!important;
+    display: flex!important;
+    align-items: center;
+    color: #777;
+    justify-content: flex-end;
+}
+
+.filter-tab-focus {
+    color: var(--green)!important;
+}
+
+.filter-tab-focus>text {
+    color: var(--green)!important;
+}
+
+.sort {
+    display: flex!important;
+    justify-content: center;
+}
+
+.triangle {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-left: 10rpx;
+}
+
+.triangle>text {
+    height: 14rpx!important;
+    line-height: 12rpx!important;
+}

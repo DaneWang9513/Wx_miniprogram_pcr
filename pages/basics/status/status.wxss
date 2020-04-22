@@ -1,0 +1,2 @@
+/* miniprogram/pages/basics/status/status.wxss */
+@import "../../../wxParse/wxParse.wxss";

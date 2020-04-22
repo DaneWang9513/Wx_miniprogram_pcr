@@ -1,0 +1,19 @@
+<!--miniprogram/pages/basics/battle system/battle system.wxml-->
+<cu-custom bgColor="bg-gradual-pink" isBack="{{true}}"><view slot="backText">返回</view><view slot="content">玩法</view></cu-custom>
+<view class="cu-bar bg-white solid-bottom">
+  <view class="action">
+    <text class="cuIcon-titles text-orange"></text> 战斗系统
+  </view>
+</view>
+<scroll-view scroll-x class="bg-white nav" scroll-with-animation scroll-left="{{scrollLeft}}">
+  <view class="cu-item {{index==TabCur?'text-green cur':''}}" wx:for="{{tablist}}" wx:key bindtap="tabSelect" data-id="{{index}}">
+    {{tablist[index]}}
+  </view>
+</scroll-view>
+<view style="background-color:white;">
+<import src="../../../wxParse/wxParse.wxml"/>
+<template is="wxParse" data="{{wxParseData:article.nodes}}"/>
+</view>
+<view class="adContainer">
+  <ad unit-id="adunit-3f36988cdec7e569"></ad>
+</view>

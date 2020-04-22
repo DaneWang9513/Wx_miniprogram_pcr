@@ -1,0 +1,21 @@
+<!--miniprogram/pages/basics/game background/game background.wxml-->
+<cu-custom bgColor="bg-gradual-blue" isBack="{{true}}"><view slot="backText">返回</view><view slot="content">游戏背景</view></cu-custom>
+<view class="cu-bar bg-white margin-top solid-bottom">
+  <view class="action">
+    <text class="cuIcon-title text-orange"></text> 游戏背景
+  </view>
+</view>
+<scroll-view scroll-x class="bg-white nav">
+  <view class="flex text-center">
+    <view class="cu-item flex-sub {{index==TabCur?'text-orange cur':''}}" wx:for="{{tablist}}" wx:key bindtap="tabSelect" data-id="{{index}}">
+      {{tablist[index]}}
+    </view>
+  </view>
+</scroll-view>
+<view style="background-color:white;">
+<import src="../../../wxParse/wxParse.wxml"/>
+<template is="wxParse" data="{{wxParseData:article.nodes}}"/>
+</view>
+<view class="adContainer">
+  <ad unit-id="adunit-34ae0d0d2028a0d6"></ad>
+</view>

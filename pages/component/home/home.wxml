@@ -1,0 +1,86 @@
+<cu-custom bgColor="bg-gradual-red">
+    <view slot="content">人物图鉴</view>
+</cu-custom>
+<view class="header" style="top:{{CustomBar}}px">
+    <view class="cu-bar search bg-white">
+    
+        <view class="search-form round">
+            <text class="cuIcon-search"></text>
+            <input bindinput="searchBindInput" confirmType="search" placeholder="输入名字可模糊搜索哦" type="text" value="{{searchWord}}"></input>
+            <image bindtap="searchDelete" class="search-delete" src="/images/ic_delete.png" wx:if="{{isSearch}}"></image>
+        </view>
+        <view class="action">
+            <button bindtap="search" class="cu-btn bg-green shadow-blur round" style="width: 150rpx;">搜索</button>
+        </view>
+    </view>
+    <scroll-view scrollX class="bg-white nav">
+        <view class="flex text-center">
+            <view bindtap="sortSelect" class="cu-item flex-sub sort" data-type="1">
+                <view class="{{sort==1?'text-orange':''}}">姓名</view>
+                <view class="triangle">
+                    <text class="cuIcon-triangleupfill {{sort==1&&nameSort=='asc'?'text-orange':'text-grey'}}"></text>
+                    <text class="cuIcon-triangledownfill {{sort==1&&nameSort==='desc'?'text-orange':'text-grey'}}"></text>
+                </view>
+            </view>
+            
+            <view bindtap="filter" class="cu-item flex-sub filter-tab {{menuShow||isFilter?'filter-tab-focus':''}}">
+                <view style="border-left: 1px solid #ddd;height: 40%;padding-right: 28rpx;"></view>
+                <text style="font-size: 28rpx;">筛选</text>
+                <text class="cuIcon-filter text-grey" style="padding: 0 32rpx 0 12rpx;"></text>
+            </view>
+        </view>
+    </scroll-view>
+</view>
+<scroll-view class="list" >
+    <view class="cu-list menu-avatar">
+        <view bindtap="detail" class="cu-item" data-id="{{index}}" wx:for="{{result}}" wx:key="index">
+            <view class="img-wrapper">
+                <image class="resident-img" lazyLoad="true" mode="aspectFit" src="{{item.image}}"></image>
+            </view>
+            <view class="content">
+                <view>
+                    <text class="text-cut">{{item.name}}</text>
+                    <text class="{{item.sex=='♂'?'text-blue':'text-pink'}}" style="margin-left:15rpx">{{item.sex}}</text>
+                </view>
+                <view class="text-gray text-sm flex">
+                    <text class="text-cut">{{item.motto}}</text>
+                </view>
+            </view>
+            <view class="action">
+                <view class="text-grey text-xs">{{item.race}}</view>
+                <view class="text-green text-xs">{{item.nature}}</view>
+            </view>
+        </view>
+    </view>
+</scroll-view>
+<view bindtap="filterClose" class="cu-modal drawer-modal filter-modal {{menuShow?'show':''}}">
+    <view catchtap class="cu-dialog basis-lg filter-view" style="top:calc({{CustomBar}}px + 188rpx);">
+        <view class="cu-list menu text-left" style="padding:5rpx 38rpx 0px">
+            <view class="filter-block">
+                <view class="filter-condition">类型</view>
+                <view class="filter-option filter-option-month flex-position1" style="margin-bottom: 16rpx">
+                    <view class="flex-position1-view" wx:for="{{races}}" wx:key="index">
+                        <view bindtap="multipleOptionChoose" class="cu-tag radius filter-tag {{util.indexOf(raceOption,item)!=-1?'optionChoosed':''}}" data-module="race" data-value="{{item}}">
+                            {{item}}
+                        </view>
+                    </view>
+                </view>
+            </view>
+            <view class="filter-block">
+                <view class="filter-condition">星级</view>
+                <view class="filter-option filter-option-month flex-position1" style="margin-bottom: 16rpx">
+                    <view class="flex-position1-view" wx:for="{{natures}}" wx:key="index">
+                        <view bindtap="multipleOptionChoose" class="cu-tag radius filter-tag {{util.indexOf(natureOption,item)!=-1?'optionChoosed':''}}" data-module="nature" data-value="{{item}}">
+                            {{item}}
+                        </view>
+                    </view>
+                </view>
+            </view>
+        </view>
+        <view class="flex filter-btns">
+            <view bindtap="optionReset" class="flex-sub">重置</view>
+            <view bindtap="optionFinish" class="flex-sub filter-right-btn">完成</view>
+        </view>
+    </view>
+</view>
+<wxs module="util" src="../../../utils/util.wxs" />

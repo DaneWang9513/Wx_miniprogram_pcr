@@ -1,0 +1,111 @@
+<view class="cu-custom" style="height:{{CustomBar}}px">
+    <view class="cu-bar fixed bg-gradual-red" style="height:{{CustomBar}}px;padding-top:{{StatusBar}}px;">
+        <view bindtap="pageBack" class="action">
+            <text class="cuIcon-back"></text> 返回
+        </view>
+        <view class="content" style="top:{{StatusBar}}px;justify-content: center;">
+            人物 - {{item.name}}
+        </view>
+    </view>
+</view>
+<view class="cu-card dynamic" wx:if="{{type!=4}}">
+    <view class="cu-item shadow">
+        <view class="grid flex-sub padding-lr col-1" style="jusify-content:center;align-items:center;flex-wrap:nowrap !important">
+            <text bindtap="change" class="cuIcon-back text-grey arrow" data-module="-1"></text>
+            <image class="bg-img only-img animal-img" mode="aspectFit" src="{{item.image}}"></image>
+            <text bindtap="change" class="cuIcon-right text-grey arrow" data-module="1"></text>
+        </view>
+    </view>
+</view>
+<view class="cu-list menu sm-border card-menu margin-top">
+    <view class="cu-item">
+        <view class="content">
+            <image class="png" mode="aspectFit" src="https://wxdc.bsrse.com/media/image/logo_gz.jpg"></image>
+            <text class="text-grey">名字</text>
+        </view>
+        <view class="action">
+            <text class="text-grey text-sm">{{item.name}}</text>
+            <text class="{{item.sex=='♂'?'text-blue':'text-pink'}}" style="margin-left:15rpx">{{item.sex}}</text>
+        </view>
+    </view>
+    <view class="cu-item">
+        <view class="content">
+            <text class="cuIcon-activity text-orange"></text>
+            <text class="text-grey">类型</text>
+        </view>
+        <view class="action">
+            <text class="text-grey text-sm">{{item.race}}</text>
+        </view>
+    </view>
+    <view class="cu-item">
+        <view class="content">
+            <text class="cuIcon-colorlens text-purple"></text>
+            <text class="text-grey">星级</text>
+        </view>
+        <view class="action">
+            <text class="text-grey text-sm">{{item.nature}}</text>
+        </view>
+    </view>
+    <view class="cu-item">
+        <view class="content">
+            <text class="cuIcon-tagfill text-green"></text>
+            <text class="text-grey">CV</text>
+        </view>
+        <view class="action">
+            <text class="text-grey text-sm">{{item.tag}}</text>
+        </view>
+    </view>
+    <view class="cu-item">
+        <view class="content">
+            <text class="cuIcon-hotfill text-red"></text>
+            <text class="text-grey">座右铭</text>
+        </view>
+        <view class="action" style="width: 400rpx;">
+            <text class="text-grey text-sm">{{item.motto}}</text>
+        </view>
+    </view>
+    <view class="cu-item">
+        <view class="content">
+            <image class="png" mode="aspectFit" src="{{item.skill1_image}}"></image>
+            <text class="text-grey">{{item.skill1_name}}</text>
+        </view>
+        <view class="action" style="width: 400rpx;">
+            <text class="text-grey text-sm">{{item.skill1_des}}</text>
+        </view>
+    </view>
+     <view class="cu-item">
+        <view class="content">
+            <image class="png" mode="aspectFit" src="{{item.skill2_image}}"></image>
+            <text class="text-grey">{{item.skill2_name}}</text>
+        </view>
+        <view class="action" style="width: 400rpx;">
+            <text class="text-grey text-sm">{{item.skill2_des}}</text>
+        </view>
+    </view>
+     <view class="cu-item">
+        <view class="content">
+            <image class="png" mode="aspectFit" src="{{item.skill3_image}}"></image>
+            <text class="text-grey">{{item.skill3_name}}</text>
+        </view>
+        <view class="action" style="width: 400rpx;">
+            <text class="text-grey text-sm">{{item.skill3_des}}</text>
+        </view>
+    </view>
+     <view class="cu-item">
+        <view class="content">
+            <image class="png" mode="aspectFit" src="{{item.skill4_image}}"></image>
+            <text class="text-grey">{{item.skill4_name}}</text>
+        </view>
+        <view class="action" style="width: 400rpx;">
+            <text class="text-grey text-sm">{{item.skill4_des}}</text>
+            <image mode="aspectFit" src="{{item.skill4_gif}}" style="height: 140px;"></image>
+        </view>
+    </view>
+    <view style='background-color:white'>
+    <import src="../../../wxParse/wxParse.wxml"/>
+    <template is="wxParse" data="{{wxParseData:article.nodes}}"/>
+    </view>
+</view>
+<view class="adContainer">
+  <ad unit-id="adunit-d2c7a3315a41ba00"></ad>
+</view>

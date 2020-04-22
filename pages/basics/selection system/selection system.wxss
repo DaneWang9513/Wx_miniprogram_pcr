@@ -1,0 +1,2 @@
+/* miniprogram/pages/basics/selection system/selection system.wxss */
+@import "../../../wxParse/wxParse.wxss";

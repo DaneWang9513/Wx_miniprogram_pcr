@@ -1,0 +1,2 @@
+/* miniprogram/pages/plugin/push/push.wxss */
+@import "../../../wxParse/wxParse.wxss";

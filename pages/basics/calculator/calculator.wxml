@@ -1,0 +1,35 @@
+<!--miniprogram/pages/basics/calculator/calculator.wxml-->
+<cu-custom bgColor="bg-gradual-orange" isBack="{{true}}"><view slot="backText">返回</view><view slot="content">计算工具箱</view></cu-custom>
+<scroll-view scroll-x class="bg-white nav" scroll-with-animation scroll-left="{{scrollLeft}}">
+  <view class="cu-item {{index==TabCur?'text-green cur':''}}" wx:for="{{tablist}}" wx:key bindtap="tabSelect" data-id="{{index}}">
+    {{tablist[index]}}
+  </view>
+</scroll-view>
+<view wx:if="{{TabCur==0}}">
+  
+	<view class="cu-form-group margin-top">
+		<view class="title">目前等级</view>
+		<input placeholder="请输入数字(最大161)" name="level" confirm-type="done" bindinput="bindInput_1"></input>
+	</view>
+  <view class="cu-form-group">
+		<view class="title">目前体力值</view>
+		<input placeholder="请输入数字" name="tili" confirm-type="done" bindinput="bindInput_2"></input>
+		<button class="cu-btn bg-green shadow" style="width: 25%;" bindtap="cal1">计算</button>
+	</view>
+  
+  <view class="padding text-center">
+    <view class="padding-lr bg-white">
+      <view class="solid-bottom padding">
+      <text class="text-Abc">当前计算结果</text>
+      </view>
+      <view class="padding">最大体力<text class="text-blue">\t{{tili_max}}\t</text>体力全满时间<text class="text-green">\t{{tili_time}}\t</text></view>
+    </view>
+  </view>
+  <view style="background-color:white;">
+  <import src="../../../wxParse/wxParse.wxml"/>
+  <template is="wxParse" data="{{wxParseData:article.nodes}}"/>
+  </view>
+</view>
+<view class="adContainer">
+  <ad unit-id="adunit-54399c0561871010"></ad>
+</view>

@@ -1,0 +1,114 @@
+<cu-custom bgColor="bg-gradual-green" isBack="{{true}}"><view slot="backText">返回</view><view slot="content">日志</view></cu-custom>
+<view class="cu-timeline">
+  <view class="cu-item text-green">
+    <view class="bg-green content shadow">
+      <view class="cu-capsule radius">
+        <view class="cu-tag bg-white text-green">v1.0.11</view>
+        <view class="cu-tag line-white">2020/04/20</view>
+      </view>
+      <view class="margin-top-sm text-content">1.新增"状态图示"模块</view>
+      <view class="margin-top-sm text-content">2.新增"计算工具箱"模块</view>
+      <view class="margin-top-sm text-content">3."角色系统"模块新增"站位"类目</view>
+    </view>
+  </view>
+  <view class="cu-item text-green">
+    <view class="bg-green content shadow">
+      <view class="cu-capsule radius">
+        <view class="cu-tag bg-white text-green">v1.0.10</view>
+        <view class="cu-tag line-white">2020/04/19</view>
+      </view>
+      <view class="margin-top-sm text-content">1.优化"扭蛋模拟"几率并增加"全部三星"显示</view>
+    </view>
+  </view>
+  <view class="cu-item text-green">
+    <view class="bg-green content shadow">
+      <view class="cu-capsule radius">
+        <view class="cu-tag bg-white text-green">v1.0.9</view>
+        <view class="cu-tag line-white">2020/04/19</view>
+      </view>
+      <view class="margin-top-sm text-content">1."人物图鉴"详情页面增加词条</view>
+    </view>
+  </view>
+  <view class="cu-item text-green">
+    <view class="bg-green content shadow">
+      <view class="cu-capsule radius">
+        <view class="cu-tag bg-white text-green">v1.0.8</view>
+        <view class="cu-tag line-white">2020/04/18</view>
+      </view>
+      <view class="margin-top-sm text-content">1.新增"关卡掉落"模块</view>
+    </view>
+  </view>
+  <view class="cu-item text-green">
+    <view class="bg-green content shadow">
+      <view class="cu-capsule radius">
+        <view class="cu-tag bg-white text-green">v1.0.7</view>
+        <view class="cu-tag line-white">2020/04/17</view>
+      </view>
+      <view class="margin-top-sm text-content">1.新增"装备"板块</view>
+    </view>
+  </view>
+  <view class="cu-item text-green">
+    <view class="bg-green content shadow">
+      <view class="cu-capsule radius">
+        <view class="cu-tag bg-white text-green">v1.0.6</view>
+        <view class="cu-tag line-white">2020/04/16</view>
+      </view>
+      <view class="margin-top-sm text-content">1.新增"扭蛋模拟"模块</view>
+    </view>
+  </view>
+  <view class="cu-item text-green">
+    <view class="bg-green content shadow">
+      <view class="cu-capsule radius">
+        <view class="cu-tag bg-white text-green">v1.0.5</view>
+        <view class="cu-tag line-white">2020/04/15</view>
+      </view>
+      <view class="margin-top-sm text-content">1.新增"黑话合集"模块</view>
+    </view>
+  </view>
+  <view class="cu-item text-green">
+    <view class="bg-green content shadow">
+      <view class="cu-capsule radius">
+        <view class="cu-tag bg-white text-green">v1.0.4</view>
+        <view class="cu-tag line-white">2020/04/15</view>
+      </view>
+      <view class="margin-top-sm text-content">1.新增"意见反馈"</view>
+      <view class="margin-top-sm text-content">2.修改"关于公主连结百科"内容</view>
+    </view>
+  </view>
+  <view class="cu-item text-green">
+    <view class="bg-green content shadow">
+      <view class="cu-capsule radius">
+        <view class="cu-tag bg-white text-green">v1.0.3</view>
+        <view class="cu-tag line-white">2020/04/15</view>
+      </view>
+      <view class="margin-top-sm text-content">1.根据国服资料优化"人物"板块</view>
+    </view>
+  </view>
+  <view class="cu-item text-green">
+    <view class="bg-green content shadow">
+      <view class="cu-capsule radius">
+        <view class="cu-tag bg-white text-green">v1.0.2</view>
+        <view class="cu-tag line-white">2020/04/14</view>
+      </view>
+      <view class="margin-top-sm text-content">1.新增"攻略"板块</view>
+    </view>
+  </view>
+  <view class="cu-item text-green">
+    <view class="bg-green content shadow">
+      <view class="cu-capsule radius">
+        <view class="cu-tag bg-white text-green">v1.0.1</view>
+        <view class="cu-tag line-white">2020/04/14</view>
+      </view>
+      <view class="margin-top-sm text-content">1.新增"游戏背景"模块</view>
+    </view>
+  </view>
+  <view class="cu-item text-green">
+    <view class="bg-green content shadow">
+      <view class="cu-capsule radius">
+        <view class="cu-tag bg-white text-green">v1.0.0</view>
+        <view class="cu-tag line-white">2020/04/13</view>
+      </view>
+      <view class="margin-top-sm text-content">1.0新版本上线</view>
+    </view>
+  </view>
+</view>

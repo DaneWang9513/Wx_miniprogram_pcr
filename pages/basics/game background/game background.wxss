@@ -1,0 +1,2 @@
+/* miniprogram/pages/basics/game background/game background.wxss */
+@import "../../../wxParse/wxParse.wxss";

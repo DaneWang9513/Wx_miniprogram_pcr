@@ -1,0 +1,37 @@
+<scroll-view scroll-y class="scrollPage">
+  <view class="UCenter-bg">
+    <image src="https://wxdc.bsrse.com/media/image/logo_gz.jpg" class="png" mode="widthFix"></image>
+    <view class="text-xl">公主连结百科
+      <text class="text-df">v1.0.11</text>
+    </view>
+    
+    <image class="gif-wave" mode="scaleToFill" src="https://wxdc.bsrse.com/media/image/wave.gif"></image>
+  </view>
+  <view class="cu-list menu card-menu margin-top-xl margin-bottom-xl shadow-lg radius">
+    <view class="cu-item arrow">
+      <navigator class="content" url="/pages/about/log/log" hover-class="none">
+        <text class="cuIcon-formfill text-green"></text>
+        <text class="text-grey">更新日志</text>
+      </navigator>
+    </view>
+    <view class="cu-item arrow">
+      <navigator class="content" url="" hover-class="none" bindtap="feedback">
+        <text class="cuIcon-writefill text-cyan"></text>
+        <text class="text-grey">意见反馈</text>
+      </navigator>
+    </view>
+    <view class="cu-item arrow">
+      <view class="content" bindtap="showQrcode">
+        <text class="cuIcon-appreciatefill text-red"></text>
+        <text class="text-grey">赞赏支持</text>
+      </view>
+    </view>
+    <view class="cu-item arrow">
+      <navigator class="content" url="/pages/about/about/about" hover-class="none">
+        <text class="cuIcon-infofill text-blue"></text>
+        <text class="text-grey">关于公主连结百科</text>
+      </navigator>
+    </view>
+  </view>
+  <view class="cu-tabbar-height"></view>
+</scroll-view>

@@ -1,0 +1,14 @@
+/* pages/equipment/list/list.wxss */
+.equip-img.data-v-45a7ef80 {
+  width: 3rem;
+  height: 3rem;
+  margin: .5rem;
+}
+
+.flex.data-v-45a7ef80 {
+  padding-bottom: 60px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  flex-wrap: wrap;
+}

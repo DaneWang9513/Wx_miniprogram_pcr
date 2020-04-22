@@ -1,0 +1,38 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/basics/synopsis/synopsis",
+    "pages/basics/role system/role system",
+    "pages/basics/battle system/battle system",
+    "pages/basics/guild/guild",
+    "pages/basics/selection system/selection system",
+    "pages/basics/gacha/gacha",
+    "pages/about/about/about",
+    "pages/about/log/log",
+    "pages/about/home/home",
+    "pages/basics/game background/game background",
+    "pages/plugin/suggestions/suggestions",
+    "pages/plugin/initial/initial",
+    "pages/plugin/recommended/recommended",
+    "pages/plugin/vernacular/vernacular",
+    "pages/equipment/detail/detail",
+    "pages/basics/droplist/droplist",
+    "pages/plugin/push/push",
+    "pages/basics/status/status",
+    "pages/basics/calculator/calculator"
+  ],
+  "window": {
+    "navigationBarBackgroundColor": "#F6F6F6",
+    "navigationBarTitleText": "公主连结百科",
+    "navigationBarTextStyle": "white",
+    "navigationStyle": "custom"
+  },
+  "usingComponents": {
+    "cu-custom": "/colorui/components/cu-custom"
+  },
+  "navigateToMiniProgramAppIdList": [
+    "wx8abaf00ee8c3202e"
+  ],
+  "sitemapLocation": "sitemap.json",
+  "style": "v2"
+}

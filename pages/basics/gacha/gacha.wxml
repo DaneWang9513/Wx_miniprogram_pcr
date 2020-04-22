@@ -1,0 +1,59 @@
+<!--miniprogram/pages/plugin/gacha/gacha.wxml-->
+<cu-custom bgColor="bg-gradual-green" isBack="{{true}}"><view slot="backText">返回</view><view slot="content">扭蛋模拟</view></cu-custom>
+<view class="cu-bar bg-white solid-bottom margin-top">
+
+    <view class="action">
+      <text class="cuIcon-title text-blue"></text>选择方式
+    </view>
+    <view class="action">
+      <button class="cu-btn bg-green shadow" bindtap="chongzhi" style="width: 150rpx;">重置</button>
+    </view>
+  </view>
+  <view class="padding bg-white">
+    <view class="flex">
+      <view class="flex-sub bg-green padding-sm margin-xs radius" style="text-align: center;" bindtap="danchou">单抽</view>
+      <view class="flex-sub bg-green padding-sm margin-xs radius" style="text-align: center;" bindtap="shichou">十抽</view>
+    </view>
+</view>
+<view class="cu-bar bg-white margin-top solid-bottom">
+    <view class="action">
+      <text class="cuIcon-title text-blue"></text>当前数据分析
+    </view>
+    <view class="action"></view>
+  </view>
+  <view class="bg-white padding">
+    <view class="grid col-4 margin-bottom text-center">
+      <view class="padding1">抽奖次数</view><view class="padding1">{{gacya_cishu}}</view>
+      <view class="padding1">三星个数</view><view class="padding1">{{gacya3_num}}</view>
+      <view class="padding1">二星个数</view><view class="padding1">{{gacya2_num}}</view>
+      <view class="padding1">一星个数</view><view class="padding1">{{gacya1_num}}</view>
+      <view class="padding1">全部三星</view><view class="padding1" style="width: 75%;">{{gacya3_name}}</view>
+    </view>
+</view>
+<view class="cu-bar bg-white margin-top solid-bottom">
+    <view class="action">
+      <text class="cuIcon-title text-blue"></text>当前扭蛋结果
+    </view>
+    <view class="action"></view>
+  </view>
+  <view class="bg-white padding">
+    <view class="grid col-4 grid-square">
+      <view class="bg-img" wx:for="{{gacha_list.length}}" wx:key style="background-image:url(https://wxdc.bsrse.com/media/plus/image/{{gacha_list[index]}});color:white">{{gacha_name[index]}}</view>
+    </view>
+</view>
+<view class="cu-bar bg-white margin-top solid-bottom">
+    <view class="action">
+      <text class="cuIcon-title text-blue"></text>历史扭蛋结果
+    </view>
+    <view class="action"></view>
+  </view>
+  <view class="bg-white padding">
+    <view class="grid col-4 grid-square" wx:for="{{gacha_list_old}}" wx:key>
+    <view class="text-black text-bold">第{{index+1}}次</view>
+        <view class="bg-img" wx:for-items="{{item}}" wx:for-item="item" style="background-image:url(https://wxdc.bsrse.com/media/plus/image/{{item.img}});color:white">{{item.name}}
+    </view>
+    </view>
+</view>
+<view class="adContainer">
+  <ad unit-id="adunit-a83b13b869eb282d"></ad>
+</view>

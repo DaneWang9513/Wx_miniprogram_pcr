@@ -1,0 +1,14 @@
+<!--miniprogram/pages/basics/selection system/selection system.wxml-->
+<cu-custom bgColor="bg-gradual-red" isBack="{{true}}"><view slot="backText">返回</view><view slot="content">抽选系统</view></cu-custom>
+<view class="cu-bar bg-white solid-bottom">
+  <view class="action">
+    <text class="cuIcon-titles text-orange"></text> 抽选系统
+  </view>
+</view>
+<view style="background-color:white;">
+<import src="../../../wxParse/wxParse.wxml"/>
+<template is="wxParse" data="{{wxParseData:article.nodes}}"/>
+</view>
+<view class="adContainer">
+  <ad unit-id="adunit-bcf166e9cba40194"></ad>
+</view>

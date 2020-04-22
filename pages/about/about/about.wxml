@@ -1,0 +1,16 @@
+<cu-custom bgColor="bg-gradual-blue" isBack="{{true}}"><view slot="backText">返回</view><view slot="content">关于</view></cu-custom>
+<view class='margin-xl bg-white padding-xl radius shadow-lg'>
+  <view class='text-center margin-bottom text-lg  text-grey'>关于公主连结百科</view>
+  <view class='text-content'>
+    <view>Hi！欢迎公主连结的玩家们！</view>
+    <view class='margin-top-sm'>该小程序主要收集一些游戏元素、游戏攻略、人物图鉴等，帮助大家更快的了解这款手游~</view>
+    <view class='margin-top-sm'>因为该小程序仅个人业余爱好所为，有许多地方需要完善，我会努力持续更新</view>
+    <view class='margin-top-sm' style="font-weight:bold">特别声明:</view>
+    <view class='margin-top-sm' style="font-weight:bold">1、该小程序使用ColorUI组件库(https://www.color-ui.com/)进行开发</view>
+    <view class='margin-top-sm' style="font-weight:bold">2、"元素"板块内容取自萌娘百科(https://zh.moegirl.org/公主连结Re:Dive)、国服wiki(https://wiki.biligame.com/pcr/)</view>
+    <view class='margin-top-sm' style="font-weight:bold">3、"人物"板块内容取自B站国服官网(https://game.bilibili.com/pcr)</view>
+    <view class='margin-top-sm' style="font-weight:bold">4、其他转载内容在页面均有注明</view>
+    <view class='margin-top-sm' style="font-weight:bold">--本项目使用的游戏图像的版权、商标和其他知识产权均归原内容提供者(@Cygames @bilibili等)</view>
+    <view class='margin-top-sm' style="font-weight:bold">--本项目为粉丝自制与版权方皆无任何关系</view>
+  </view>
+</view>

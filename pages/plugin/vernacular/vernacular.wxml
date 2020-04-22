@@ -1,0 +1,57 @@
+<!--miniprogram/pages/plugin/vernacular/vernacular.wxml-->
+<cu-custom bgColor="bg-gradual-pink" isBack="{{true}}"><view slot="backText">返回</view><view slot="content">黑话合集</view></cu-custom>
+
+<view class="cu-card dynamic {{isCard?'no-card':''}}">
+  <view class="cu-item shadow">
+    <view class="cu-list menu-avatar">
+      <view class="cu-item">
+        <view class="cu-avatar round lg" style="background-image:url('https://wxdc.bsrse.com/media/image/logo_gz.jpg');"></view>
+        <view class="content flex-sub">
+          <view>公主连结百科</view>
+          <view class="text-gray text-sm flex justify-between">
+            2020年04月15日
+          </view>
+        </view>
+      </view>
+      <scroll-view scroll-x class="bg-white nav">
+        <view class="flex text-center">
+          <view class="cu-item flex-sub {{index==TabCur?'text-orange cur':''}}" wx:for="{{tablist}}" wx:key bindtap="tabSelect" data-id="{{index}}">
+            {{tablist[index]}}
+          </view>
+        </view>
+      </scroll-view>
+      <view wx:if="{{TabCur==1}}" class="bg-grey padding-sm radius margin-top-sm  text-sm">
+            <view class="flex">
+              <import src="../../../wxParse/wxParse.wxml"/>
+              <template is="wxParse" data="{{wxParseData:article.nodes}}"/>
+            </view>
+          </view>
+    </view>
+    <view wx:if="{{TabCur==1}}" class="cu-list menu-avatar comment solids-top">
+      <view class="cu-item">
+        <view class="cu-avatar round" style="background-image:url(https://wxdc.bsrse.com/media/image/logo_gz.jpg);"></view>
+        <view class="content">
+          <view class="margin-top-sm flex justify-between">
+            <view class="text-gray text-df">转载自NGA社区，仅供参考</view>
+          </view>
+        </view>
+      </view>
+    </view>
+    <view wx:if="{{TabCur==0}}" class="flex-sub text-center">
+      <view class="solid-bottom text-xsl padding">
+        <image src="https://wxdc.bsrse.com/media/image/jiaosejiancheng.jpg" bindtap="showQrcode"></image>
+      </view>
+      <view class="padding">公主连结角色简称图</view>
+    </view>
+    <view wx:if="{{TabCur==0}}" class="cu-list menu-avatar comment solids-top">
+      <view class="cu-item">
+        <view class="cu-avatar round" style="background-image:url(https://wxdc.bsrse.com/media/image/logo_gz.jpg);"></view>
+        <view class="content">
+          <view class="margin-top-sm flex justify-between">
+            <view class="text-gray text-df">转载自17173，仅供参考</view>
+          </view>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>

@@ -1,0 +1,13 @@
+<!--pages/equipment/list/list.wxml-->
+<cu-custom bgColor="bg-gradual-red">
+    <view slot="content">装备图鉴</view>
+</cu-custom>
+<view class="header" style="top:{{CustomBar}}px">
+<view class="flex data-v-45a7ef80">
+  <view class="data-v-45a7ef80" wx:for="{{equipmentList}}" wx:for-item="equipment">
+      <view class="data-v-45a7ef80" >
+          <image class="equip-img data-v-45a7ef80" src="{{equipment.src}}" data-index="{{equipment}}" bindtap="GetDetialMessage"></image>
+      </view>
+  </view>
+</view>
+</view>

@@ -1,0 +1,2 @@
+/* miniprogram/pages/plugin/tutorial/tutorial.wxss */
+@import "../../../wxParse/wxParse.wxss";

@@ -1,0 +1,26 @@
+@import "../../../wxParse/wxParse.wxss";
+.animal-img {
+    height: 280rpx!important;
+    margin: 30rpx auto;
+    width: none!important;
+}
+
+.cu-card>.cu-item {
+    margin-bottom: 0rpx!important;
+    border-radius: 20rpx;
+}
+
+.arrow {
+    padding: 20rpx;
+    margin-left: -20rpx;
+}
+
+.cu-list.card-menu {
+    
+}
+
+.advertisement {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}

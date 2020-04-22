@@ -1,0 +1,2 @@
+/* miniprogram/pages/basics/role system/role system，.wxss */
+@import "../../../wxParse/wxParse.wxss";

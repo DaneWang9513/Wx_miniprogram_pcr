@@ -1,0 +1,94 @@
+<!--miniprogram/pages/equipment/detail/detail.wxml-->
+<cu-custom bgColor="bg-gradual-red" isBack="{{true}}"><view slot="backText">返回</view><view slot="content">{{equipment.name}}</view></cu-custom>
+<view class="content padding flex flex-wrap data-v-2db983f3">
+        <image class="avatar data-v-2db983f3" src="{{equipment.src}}"></image>
+        <view class="show-list simple-detail data-v-2db983f3">
+            <view class="data-v-2db983f3">
+                <label class="data-v-2db983f3">名称</label>
+                <view class="data-v-2db983f3">{{equipment.name}}</view>
+            </view>
+            <view class="data-v-2db983f3" wx:if="{{equipment.physicalAttack}}">
+                <label class="data-v-2db983f3">攻击</label>
+                <view class="data-v-2db983f3">{{equipment.physicalAttack}}</view>
+            </view>
+            <view class="data-v-2db983f3" wx:if="{{equipment.hp}}">
+                <label class="data-v-2db983f3">血量</label>
+                <view class="data-v-2db983f3">{{equipment.hp}}</view>
+            </view>
+            <view class="data-v-2db983f3" wx:if="{{equipment.hpautoReply}}">
+                <label class="data-v-2db983f3">血量自动回复</label>
+                <view class="data-v-2db983f3">{{equipment.hpautoReply}}</view>
+            </view>
+            <view class="data-v-2db983f3" wx:if="{{equipment.avoid}}">
+                <label class="data-v-2db983f3">闪避</label>
+                <view class="data-v-2db983f3">{{equipment.avoid}}</view>
+            </view>
+            <view class="data-v-2db983f3" wx:if="{{equipment.hit}}">
+                <label class="data-v-2db983f3">命中</label>
+                <view class="data-v-2db983f3">{{equipment.hit}}</view>
+            </view>
+            <view class="data-v-2db983f3" wx:if="{{equipment.hprise}}">
+                <label class="data-v-2db983f3">HP上升</label>
+                <view class="data-v-2db983f3">{{equipment.hprise}}</view>
+            </view>
+            <view class="data-v-2db983f3" wx:if="{{equipment.lifeAbsorption}}">
+                <label class="data-v-2db983f3">吸血</label>
+                <view class="data-v-2db983f3">{{equipment.lifeAbsorption}}</view>
+            </view>
+            <view class="data-v-2db983f3" wx:if="{{equipment.magicAttack}}">
+                <label class="data-v-2db983f3">魔法攻击</label>
+                <view class="data-v-2db983f3">{{equipment.magicAttack}}</view>
+            </view>
+            <view class="data-v-2db983f3" wx:if="{{equipment.magicBursts}}">
+                <label class="data-v-2db983f3">魔法暴击</label>
+                <view class="data-v-2db983f3">{{equipment.magicBursts}}</view>
+            </view>
+            <view class="data-v-2db983f3" wx:if="{{equipment.magicDefense}}">
+                <label class="data-v-2db983f3">魔法防御</label>
+                <view class="data-v-2db983f3">{{equipment.magicDefense}}</view>
+            </view>
+            <view class="data-v-2db983f3" wx:if="{{equipment.physicalAttack}}">
+                <label class="data-v-2db983f3">物理攻击</label>
+                <view class="data-v-2db983f3">{{equipment.physicalAttack}}</view>
+            </view>
+            <view class="data-v-2db983f3" wx:if="{{equipment.physicalBursts}}">
+                <label class="data-v-2db983f3">物理暴击</label>
+                <view class="data-v-2db983f3">{{equipment.physicalBursts}}</view>
+            </view>
+            <view class="data-v-2db983f3" wx:if="{{equipment.physicalDefense}}">
+                <label class="data-v-2db983f3">物理防御</label>
+                <view class="data-v-2db983f3">{{equipment.physicalDefense}}</view>
+            </view>
+            <view class="data-v-2db983f3" wx:if="{{equipment.tpautoReply}}">
+                <label class="data-v-2db983f3">TP自动回复</label>
+                <view class="data-v-2db983f3">{{equipment.tpautoReply}}</view>
+            </view>
+            <view class="data-v-2db983f3" wx:if="{{equipment.tpconsumptionReduction}}">
+                <label class="data-v-2db983f3">TP能量减少</label>
+                <view class="data-v-2db983f3">{{equipment.tpconsumptionReduction}}</view>
+            </view>
+            <view class="data-v-2db983f3" wx:if="{{equipment.tprise}}">
+                <label class="data-v-2db983f3">TP上升</label>
+                <view class="data-v-2db983f3">{{equipment.tprise}}</view>
+            </view>
+        </view>
+        <view class="word padding margin-top data-v-2db983f3" wx:if="{{equipment.description}}">{{equipment.description}}</view>
+    </view>
+    <view class="desc data-v-2db983f3">装备掉落</view>
+    <view class="drop-list data-v-2db983f3">
+        <view class="title data-v-2db983f3">普通难度</view>
+        <view class="empty-row data-v-2db983f3" wx:if="{{simpleList.length==0}}">暂无</view>
+        <view class="drop-row data-v-2db983f3" wx:if="{{simpleList.length>0}}">
+            <view class="data-v-2db983f3" wx:for="{{simpleList}}"  wx:for-item="dropList">{{dropList}}</view>
+        </view>
+    </view>
+    <view class="drop-list data-v-2db983f3" style="margin-top:10px;">
+        <view class="title data-v-2db983f3">困难难度</view>
+        <view class="empty-row data-v-2db983f3" wx:if="{{hardList.length==0}}">暂无</view>
+        <view class="drop-row data-v-2db983f3" wx:if="{{hardList.length>0}}" >
+            <view class="data-v-2db983f3" wx:for="{{hardList}}" wx:for-item="dropList">{{dropList}}</view>
+        </view>
+    </view>
+<view class="adContainer">
+  <ad unit-id="adunit-e672c3f6c16233a0"></ad>
+</view>
