@@ -10,8 +10,8 @@
 
 * 小程序二维码
 
-<p align="center">
-    <img src="./files/code.jpg" alt="小程序二维码" width="20%">
+<p>
+    <img src="./files/code.jpg" alt="小程序二维码" width="30%">
 </p>
 
 ## 功能特点 ##
